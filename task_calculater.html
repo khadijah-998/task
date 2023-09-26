@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                background-color:white; 
+                text-align: center;
+                border-radius: 8px;
+                margin-top: 200px;
+                margin-left: 500px;
+                padding: 20px;
+                border: 1px black solid;
+            }
+            td{
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 1px black solid;
+                border-radius: 8px;
+            
+            }
+            input{
+                background-color: black;
+                color: white;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <form name="form1">
+            <table>
+               <tr  >
+                     <td style="background-color: black; padding: 0px;" colspan="4"><input type="text" name="Resalt1">  </td>
+               </tr>
+                <tr style="background-color:grey;">
+                    <td onclick="form1.Resalt1.value+='+'">+</td>
+                    <td onclick="form1.Resalt1.value+='-'">-</td>
+                    <td onclick="form1.Resalt1.value+='*'">*</td>
+                    <td onclick="form1.Resalt1.value+='/'">÷</td>
+                </tr>
+                <tr>
+                    <td onclick="form1.Resalt1.value+='7'">7</td>
+                    <td onclick="form1.Resalt1.value+='8'">8</td>
+                    <td onclick="form1.Resalt1.value+='9'">9</td>
+                    <td rowspan="4" style="background-color: orange;" onclick="form1.Resalt1.value=eval(form1.Resalt1.value)">=</td>
+              </tr>
+              <tr>
+                   <td onclick="form1.Resalt1.value+='4'">4</td>
+                   <td onclick="form1.Resalt1.value+='5'">5</td>
+                   <td onclick="form1.Resalt1.value+='6'">6</td>
+              </tr>
+
+              <tr>
+                <td onclick="form1.Resalt1.value+='1'">1</td>
+                <td onclick="form1.Resalt1.value+='2'">2</td>
+                <td onclick="form1.Resalt1.value+='3'">3</td>
+           </tr>
+           <tr>
+            <td onclick="form1.Resalt1.value+='+'">0</td>
+            <td onclick="form1.Resalt1.value+='.'">.</td>
+            <td onclick="form1.Resalt1.value=''">AC</td>
+       </tr>
+
+            
+</table>
+        </form>
+    </body>
+</html>
